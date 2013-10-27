@@ -1,8 +1,6 @@
 # Mundo CSS
 
-The default theme for [MundoCSS.com](http://github.com/MundoCSS).
-
-## Copyright & License
+A Ghost theme for [MundoCSS.com](http://MundoCSS.com) - forked from Casper, the default Ghost theme.
 
 Copyright (C) 2013 Mundo CSS 
 
