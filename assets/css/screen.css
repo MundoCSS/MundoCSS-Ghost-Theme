@@ -62,7 +62,7 @@
   font-family: 'icomoon';
 }
 
-.icon-ghost, .icon-feed, .icon-twitter, .icon-google-plus, .icon-facebook, .icon-github, a.icon {
+.icon-ghost, .icon-twitter, .icon-google-plus, .icon-facebook, .icon-github, a.icon {
   color: #fff;
   speak: none;
   font-style: normal;
@@ -74,7 +74,7 @@
   font-size: 19px;
   padding: 10px;
   border-radius: 5px;
-  margin: 5px;
+  margin-left: 5px;
   background: #42c3b1;
   transition: background .218s,border-color .218s,box-shadow .218s;
   text-decoration: none;
@@ -125,6 +125,16 @@ body {
     line-height: 1.6em;
     color: #3A4145;
     font-weight: 300;
+}
+
+main{
+    background: #EEE;
+    padding: 1em 0;
+}
+
+.post-header{
+    padding: 1em 1em 0.5em 1em;
+    border-bottom: 1px solid #DDD;
 }
 
 ::-moz-selection {
@@ -184,10 +194,13 @@ a {
 
 
 
-.post-header a:hover, .site-footer a:hover{
+.post-header a:hover{ 
     color: #42c3b1;
     border-bottom: 1px solid #42c3b1;
+}
 
+.site-footer a:hover, .hostedby img:hover{
+    border-bottom: 1px solid #fff;
 }
 
 h1 a, h2 a, h3 a,
@@ -378,13 +391,13 @@ table.plain {
 /* Creates a responsive wrapper that makes our content scale nicely */
 .inner {
     position: relative;
-    width: 80%;
-    max-width: 700px;
+    width: 90%;
+    max-width: 1040px;
     margin: 0em auto;
 }
 
 footer .inner{
-    margin: 4em auto;
+    margin: 2em auto;
 }
 
 /* Centres vertically yo. (IE8+) */
@@ -401,8 +414,7 @@ footer .inner{
 /* Big cover image on the home page */
 
 .site-head, .site-footer {
-    background-image: url(/assets/img/bg2.jpg);
-    background-attachment: fixed;
+    background: #fff;
 }
 
 
@@ -410,10 +422,8 @@ footer .inner{
     position: relative;
     display: table;
     width: 100%;
-    height: 15em;
-    margin-bottom: 5rem;
+    height: 9em;
     text-align: center;
-    color: #fff;
 }
 
 /* Yo-logo. Yolo-go. Upload one in ghost/settings/ */
@@ -435,18 +445,20 @@ footer .inner{
 }
 
 .logo {
-    width: 8em;
-    height: 8em;
-    margin: 1em auto;
+    width: 6em;
+    height: 6em;
     margin-top: 0;
     color: transparent;
     background: url(/assets/img/Logo.png) no-repeat;
     background-size: contain;
+    float: left;
 }
 
 .icons {
-    width: 9em;
+    width: 6em;
     margin: auto;
+    padding: 2em 0;
+    float: right;
 }
 
 .icon-twitter:hover, .icon-google-plus:hover, .icon-github:hover, .icon-facebook:hover{
@@ -486,28 +498,12 @@ footer .inner{
     max-width: 1040px;
     margin: 4rem auto;
     padding-bottom: 4rem;
-    border-bottom: #EBF2F6 3px solid;
     word-break: break-word;
     hyphens: auto;
-}
-
-/* Add a little circle in the middle of the border-bottom on our .post
-   just for the lolz and stylepoints. */
-.post:after {
-    display: block;
-    content: "";
-    width: 7px;
-    height: 7px;
-    border: #E7EEF2 1px solid;
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    margin-left: -5px;
     background: #fff;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%;
-    box-shadow: #fff 0 0 0 5px;
+    border-radius: 0 0 5px 5px;
+    border-top: 5px solid #42c3b1;
+    box-shadow: 0px 1px 1px rgba(0,0,0,.05);
 }
 
 .post-title {
@@ -516,6 +512,9 @@ footer .inner{
 
 .post-title a {
     text-decoration: none;
+}
+.post-excerpt{
+    padding: 1em 1em 0.5em 1em;
 }
 
 .post-excerpt p {
@@ -709,9 +708,10 @@ footer .inner{
     max-width: 700px;
     margin: 4rem auto;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: #9EABB3;
     text-align: center;
+    padding: 3rem 0;
 }
 
 .pagination a {
@@ -755,18 +755,19 @@ footer .inner{
 
 .site-footer {
     position: relative;
-    margin: 8rem 0 0 0;
-    padding: 4rem 0;
+    margin: 0;
+    padding: 0;
     border-top: #EBF2F6 1px solid;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.3rem;
     line-height: 1.7em;
-    color: #BBC7CC;
+    color: #C5E2D4;
     text-align: center;
+    background: #33A595;
+    height: 4.5em;
 }
 
 .site-footer a {
-    color: #fff;
     text-decoration: none;
     padding: 0;
 }
@@ -795,6 +796,7 @@ footer .inner{
 
 .hostedby{
     display: inline-block;
+    margin-top: -4px;
 }
 
 .hostedby p {
@@ -809,11 +811,6 @@ footer .inner{
 
 .hostedby a:hover{
     border-bottom: none;
-}
-
-.hostedby img:hover{
-    background: #42c3b1;
-    transition: background .5s;
 }
 
 /* The subscribe icon on the footer */
@@ -1049,10 +1046,13 @@ footer .inner{
     }
 
     .site-footer {
-        margin-top: 6rem;
         font-size: 1.1rem;
     }
 
+    .copyright, .poweredby, .hostedby{
+        float: none;
+        width: 100%
+    }
 }
 
 /* ==========================================================================
