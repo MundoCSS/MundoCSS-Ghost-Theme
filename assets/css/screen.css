@@ -452,9 +452,11 @@ footer .inner{
     height: 6em;
     margin-top: 0;
     color: transparent;
-    background: url(/assets/img/Logo.png) no-repeat;
-    background-size: contain;
     float: left;
+}
+
+.logo img{
+    width: 100%
 }
 
 .icons {

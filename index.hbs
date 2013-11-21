@@ -8,7 +8,11 @@
     <div class="vertical">
         <div id="site-head-content" class="inner">
               <a href="/"><div class="logo">
-                Mundo CSS
+                {{#if @blog.logo}}
+                    <img src="{{@blog.logo}}" alt="Logo" />
+                {{else}}
+                    {{@blog.title}}
+                {{/if}}
               </div></a>
               <div class="icons">
                 <span aria-hidden="true" class="icon-twitter"></span>
