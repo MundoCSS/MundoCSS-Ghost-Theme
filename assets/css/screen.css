@@ -127,12 +127,12 @@ body {
     font-weight: 300;
 }
 
-main{
+.home-template main{
     background: #EEE;
     padding: 1em 0;
 }
 
-.post-header{
+.home-template .post-header{
     padding: 1em 1em 0.5em 1em;
     border-bottom: 1px solid #DDD;
 }
@@ -186,12 +186,15 @@ h6 {
     font-size: 2rem;
 }
 
-a {
+main a {
     color: #42c3b1;
     transition: color ease 0.3s;
     text-decoration: none;
 }
 
+footer a{
+    color:#fff;
+}
 
 
 .post-header a:hover{ 
@@ -397,7 +400,7 @@ table.plain {
 }
 
 footer .inner{
-    margin: 2em auto;
+    margin: 1.9em auto;
 }
 
 /* Centres vertically yo. (IE8+) */
@@ -497,14 +500,19 @@ footer .inner{
     width:90%;
     max-width: 1040px;
     margin: 4rem auto;
-    padding-bottom: 4rem;
+    padding-bottom: 3rem;
     word-break: break-word;
     hyphens: auto;
+}
+
+.home-template .post{
     background: #fff;
     border-radius: 0 0 5px 5px;
     border-top: 5px solid #42c3b1;
     box-shadow: 0px 1px 1px rgba(0,0,0,.05);
 }
+
+
 
 .post-title {
     margin:0;
@@ -514,7 +522,7 @@ footer .inner{
     text-decoration: none;
 }
 .post-excerpt{
-    padding: 1em 1em 0.5em 1em;
+    padding: 0 1em;
 }
 
 .post-excerpt p {
@@ -771,6 +779,10 @@ footer .inner{
     text-decoration: none;
     padding: 0;
 }
+.poweredby, .copyright{
+    float: left;
+    width: 33%;
+}
 
 .poweredby .icon-ghost {
     font-weight: 700;
@@ -796,7 +808,7 @@ footer .inner{
 
 .hostedby{
     display: inline-block;
-    margin-top: -4px;
+    margin-top: -5px;
 }
 
 .hostedby p {
