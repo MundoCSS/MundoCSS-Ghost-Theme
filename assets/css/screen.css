@@ -975,6 +975,16 @@ footer .inner{
         max-height: 80px;
     }
 
+    .icons{
+        padding: 1em 0;
+        float: none;
+    }
+
+    .logo{
+        margin: 1em auto 0;
+        float: none;
+    }
+
     .inner, 
     .pagination {
         width: auto;
