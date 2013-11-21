@@ -678,11 +678,11 @@ footer .inner{
 
 .follow-links{
     margin-top: -0.5em;
-    color: #000;
     font-size: 1.6rem;
 }
 
 .follow-links a{
+    color: #000;
     border-bottom: 1px black dotted;
 }
 
