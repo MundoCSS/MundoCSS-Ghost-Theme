@@ -783,7 +783,13 @@ footer .inner{
 }
 .poweredby, .copyright{
     float: left;
-    width: 33%;
+}
+.copyright{
+    width: 40%
+}
+
+.poweredby{
+    width: 20%;
 }
 
 .poweredby .icon-ghost {
