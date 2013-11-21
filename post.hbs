@@ -33,9 +33,9 @@
 
             {{#if author}}
                 <section class="author">
-                    <a target="blank" href="https://www.twitter.com/hectorsanchezmx"><img src="{{author.image}}"></a>
+                    <a target="blank" href="{{author.website}}"><img src="{{author.image}}"></a>
                     <div class="autor-meta">
-                    <h4>{{author.name}}</h4>
+                    <a href="{{author.website}}"><h4>{{author.name}}</h4></a>
                     <p>{{author.bio}}</p>
                     </div>
                 </section>
