@@ -127,6 +127,10 @@ body {
     font-weight: 300;
 }
 
+a{
+    text-decoration: none;
+}
+
 .home-template main{
     background: #EEE;
     padding: 1em 0;
@@ -670,6 +674,16 @@ footer .inner{
 .autor-meta{
     padding-top: 3%;
     padding-left: 14rem;
+}
+
+.follow-links{
+    margin-top: -0.5em;
+    color: #000;
+    font-size: 1.6rem;
+}
+
+.follow-links a{
+    border-bottom: 1px black dotted;
 }
 
 /* Drop the share links in the space to the right.
