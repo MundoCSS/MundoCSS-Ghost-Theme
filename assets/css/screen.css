@@ -980,6 +980,11 @@ footer .inner{
         float: none;
     }
 
+    .icons span{
+        margin-left: 3px;
+        margin-right: 4px;
+    }
+
     .logo{
         margin: 1em auto 0;
         float: none;
@@ -1071,9 +1076,10 @@ footer .inner{
 
     .site-footer {
         font-size: 1.1rem;
+        height: 8em;
     }
 
-    .copyright, .poweredby, .hostedby{
+    .copyright, .poweredby{
         float: none;
         width: 100%
     }
